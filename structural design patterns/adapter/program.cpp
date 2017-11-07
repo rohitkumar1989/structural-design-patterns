@@ -21,7 +21,9 @@ class legacy_rectangle{
 	}
 };
 
-class new_rectangle:public target,private legacy_rectangle{
+class new_rectangle:public target,private legacy_rectangle{//dasshed inheritence with target as it is just implementing the operation mentoined by the parent
+//solid arrow with legacy if its variable used here
+//solid inheritence with legacy as inheriting method attributes from it.
 	
 	public:
 	new_rectangle(int x1,int y1,int w,int h):legacy_rectangle(x1,y1,w+x1,h+y1){
